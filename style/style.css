@@ -23,7 +23,7 @@ body{
     align-items: center;
     min-height:100vh;
     background-color: var(--grey900-color);
-    margin: 20px;
+    padding-inline: 20px;
 }
 
 .container {
