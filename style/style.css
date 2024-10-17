@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --green-color: hsl(75, 94%, 57%);
+  --white-color: hsl(0, 0%, 100%);
+  --grey700-color: hsl(0, 0%, 20%);
+  --grey800-color: hsl(0, 0%, 12%);
+  --grey900-color: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family:"Inter", sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color: var(--grey900-color);
+    margin: 20px;
+}
+
+.container {
+    background-color: var(--grey800-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+    color: var(--white-color);
+    width: 350px;
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.container .image img{
+    width: 100%;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description .name{
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+.description .location{
+    font-weight: 600;
+    font-size: 14.5px;
+    color: var(--green-color);
+    padding-bottom: 32px;
+}
+
+.descritpion .skills{
+    font-weight: 400;
+}
+
+.social-container{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.social-container a{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: var(--grey700-color);
+    border-radius: 10px;
+}
+
+.social-container a:hover{
+    color: var(--grey900-color);
+    background-color: var(--green-color);
+    transition: background-color 0.75s;
+}
