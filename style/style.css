@@ -64,9 +64,10 @@ body{
     font-size: 14.5px;
     color: var(--green-color);
     padding-bottom: 32px;
+    
 }
 
-.descritpion .skills{
+.description .skills{
     font-weight: 400;
 }
 
@@ -94,4 +95,10 @@ body{
     color: var(--grey900-color);
     background-color: var(--green-color);
     transition: background-color 0.75s;
+}
+
+@media (max-width: 375px){
+    .description .skills{
+        font-size: 11px;
+    }
 }
